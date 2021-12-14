@@ -163,11 +163,13 @@ p a{
         width: 100%;
        font-size:100px;
        height: 100%;
+       margin-right: 50px;
        /* display:none; */
     }
     .navLinks.active ul{
         display: flex;
         height: 100%;
+        align-items: center;
         
     }
     nav.active {
