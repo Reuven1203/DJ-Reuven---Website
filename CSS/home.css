@@ -191,7 +191,9 @@ p a{
         padding:0; 
     }
     
-    
+    body.active {
+        overflow: hidden;
+    }
     .navLinks ul {
         display:none;
         height:100%;
