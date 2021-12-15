@@ -7,4 +7,7 @@ toggleButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active');
     navTag.classList.toggle('active');
     content.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    console.log(toggleButton);
 })
+

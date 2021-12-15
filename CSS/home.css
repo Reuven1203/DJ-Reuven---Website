@@ -64,7 +64,7 @@ nav li a{
     position: absolute;
     top: 1.75rem;
     right: 1rem;
-    display: none;
+ 
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -75,6 +75,9 @@ nav li a{
     width: 100%;
     background-color:white;
     border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition:  0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
 }
 .content{
     margin-top: 175px;
@@ -170,6 +173,7 @@ p a{
         display: flex;
         height: 100%;
         align-items: center;
+        margin-bottom: 20px;
         
     }
     nav.active {
@@ -186,6 +190,52 @@ p a{
     body.active {
         overflow-y: hidden;
     };
+    .toggle-button .bar {
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition:  0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
+    }
+    
+    .toggle-button.active .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #ecf0f1;
+        display: block;
+      
+    }
+    .toggle-button.active .bar:nth-child(2){
+        /* animation: midBar;
+        animation-duration:.5s;
+        opacity:0;
+        animation-timing-function: ease-in-out; */
+        opacity: 0;
+      }
+      
+      
+      .toggle-button.active .bar:nth-child(1){
+        -webkit-transform: translateY(5px) rotate(45deg);
+        -ms-transform: translateY(5px) rotate(45deg);
+        -o-transform: translateY(5px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
+        
+        
+      }
+      
+      .toggle-button.active .bar:nth-child(3){
+        -webkit-transform: translateY(-13px) rotate(-45deg);
+        -ms-transform: translateY(-13px) rotate(-45deg);
+        -o-transform: translateY(-13px) rotate(-45deg);
+        transform: translateY(-13px) rotate(-45deg);
+       
+      }
+
+      
+     
     
 }
 
