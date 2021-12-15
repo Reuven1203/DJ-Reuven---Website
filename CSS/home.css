@@ -174,6 +174,7 @@ p a{
     .navLinks ul li a {
         text-align: center;
         width: 100%;
+        margin-right: 200px;
     }
     .navLinks.active ul{
         display: flex;
