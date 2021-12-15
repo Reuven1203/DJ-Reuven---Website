@@ -160,10 +160,20 @@ p a{
     }
 
     nav.active {
+       
+        animation: navDrop;
+        animation-duration: .5s;  
         height: 100%;
+       
     }
     .navLinks.active {
+       
+        animation: navDrop;
+        animation-duration: 0.5s; 
+        animation-fill-mode: ease-out;
+        animation-direction:forwards ;
         height: 100%;
+        
     }
   
    
@@ -243,8 +253,8 @@ p a{
        
       }
       @keyframes navDrop {
-        50% {
-            height:50%;
+        0% {
+            height:0%;
         }
         100% {
             height:100%;
