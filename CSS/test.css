@@ -1,19 +1,5 @@
 
-*{
-    margin:0;
-    padding:0;
 
-}
-html{
-    height:100vh;
-}
-body {
-
-    font-family: 'Questrial', sans-serif;
-    overflow-x:hidden;
-    margin:0;
-    height: max-content;
-}
 nav {
     
     height: 80px;
@@ -62,84 +48,23 @@ nav li a{
     display:none;
 
 }
-.toggle-button {
-    position: absolute;
-    top: 1.75rem;
-    right: 1rem;
- 
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;  
-}
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color:white;
-    border-radius: 10px;
-    -webkit-transition: 0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
-}
-.content{
-    margin-top: 175px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position:absolute;
-    z-index: 0;
-    overflow-x: hidden;
-   
-}
-canvas {
-    position: fixed;
-  
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
-
-
-
-.logo {
-   /* margin-top:150px; */
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-   height: 400px;
-   opacity: 1;
-}
 
 
 
 
 
-h3 {
-    color: white;
-    font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.bookText {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100;
-}
-p{
-    color: white;
-    text-align: center;
-    font-size: 30px;
 
-}
 
-p a{
-    color: white;
-    
-}
+
+
+
+
+
+
+
+
+
+
 
 @media  (max-width: 750px) {
 
@@ -155,45 +80,51 @@ p a{
     nav {
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        /* width: 100%; */
         opacity: .97;
         /* height: 100%; */
     }
-    .navLinks{
-        width: 100vh;
-    }
+    
     .navLinks ul li {
        text-align: center;
        background-color:#232323;
-       width: 200%;
-      padding-right:200px;
-      padding-left:200px;
+       width:100%;
+       /* font-size:100px; */
       
        /* display:none; */
     }
     .navLinks ul li a {
         text-align: center;
-        width: 100%;
     }
     .navLinks.active ul{
         display: flex;
-        flex-direction: column;
         height: 100%;
-        width:100%;
-        list-style: none;
+       width: 100%;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:100px
         
     }
-    .navLinks.active{
-      height: 100%;
-    }
+    
     nav.active {
         /* height:100%; */
         width:100%;
+        padding: 0;
+        margin:0;
       
         }
     .navLinks ul {
         display:none;
-       
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+        margin-right:0;
+        margin-inline-end: 0;
+        
+        padding: 0;
+        
     }
     body.active {
         overflow-y: hidden;
