@@ -19,7 +19,6 @@ nav {
     height: 80px;
     width: 100%;
     position: fixed;
-    /* padding-left: 20px; */
     margin-top: 0;
     z-index: 10;
     background-color: #232323;
@@ -28,7 +27,7 @@ nav {
 }
 nav ul {
     display:flex;
-    align-items: center;
+  
 }
 nav li a:hover {
   color: white;
@@ -159,13 +158,12 @@ p a{
         opacity: .97;
         /* height: 100%; */
     }
-    .navLinks{
-        width: 100vh;
-    }
+   
     .navLinks ul li {
        text-align: center;
        background-color:#232323;
-       width: 200%;
+       
+       
       
     
       
@@ -174,24 +172,21 @@ p a{
     .navLinks ul li a {
         text-align: center;
         width: 100%;
-        margin-right: 200px;
+        
     }
     .navLinks.active ul{
         display: flex;
         flex-direction: column;
         height: 100%;
-        width:100%;
-        list-style: none;
+        width: 100%;
+        margin-left:0;
         
+        
+        margin:0;
+        padding:0; 
     }
-    .navLinks.active{
-      height: 100%;
-    }
-    nav.active {
-        /* height:100%; */
-        width:100%;
-      
-        }
+    
+    
     .navLinks ul {
         display:none;
        
