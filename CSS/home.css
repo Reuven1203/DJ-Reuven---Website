@@ -154,25 +154,25 @@ p a{
     nav {
         flex-direction: column;
         align-items: flex-start;
-        /* width: 100%; */
         opacity: .97;
-        /* height: 100%; */
     }
+    
 
-    nav.active {
-       
-        animation: navDrop;
-        animation-duration: .5s;  
-        height: 100%;
-       
-    }
+   .navLinks.pull { 
+    animation: navDrop;
+    animation-duration: 5s; 
+    animation-fill-mode: forwards;
+   
+    
+   }
     .navLinks.active {
        
         animation: navDrop;
         animation-duration: 0.5s; 
-        animation-fill-mode: ease-out;
-        animation-direction:forwards ;
-        height: 100%;
+        animation-fill-mode: forwards;
+        animation-direction:normal;
+        animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+       
         
     }
   
@@ -181,6 +181,7 @@ p a{
        text-align: center;
        background-color:#232323;
        height: 100%;
+     
        
        
       
@@ -188,7 +189,7 @@ p a{
       
        /* display:none; */
     }
-    .navLinks ul li{
+    .navLinks ul li a{
         text-align: center;
         width: 100%;
 
@@ -252,12 +253,21 @@ p a{
         transform: translateY(-13px) rotate(-45deg);
        
       }
+     
       @keyframes navDrop {
         0% {
-            height:0%;
+            height:0vh;
         }
         100% {
+            height:100vh;
+        }
+    }
+    @keyfrmaes navPull {
+        0%{
             height:100%;
+        }
+        100% {
+            height:0%;
         }
     }
 
