@@ -27,7 +27,7 @@ nav {
 }
 nav ul {
     display:flex;
-  
+   list-style-type: none;
 }
 nav li a:hover {
   color: white;
@@ -35,12 +35,12 @@ nav li a:hover {
 
 nav li {
     padding-top:15px;
-    
+    text-decoration: none;
     width: 100%;
 } 
 nav li a{
     color: rgb(148, 148, 148);
-    text-decoration: none;
+   text-decoration: none;
     text-align: center;
     font-size: 30px;
     width: 100%;
@@ -138,6 +138,9 @@ p{
 p a{
     color: white;
     
+}
+.toggle-button:hover {
+    cursor: pointer;
 }
 
 @media  (max-width: 750px) {
@@ -253,6 +256,10 @@ p a{
         transform: translateY(-13px) rotate(-45deg);
        
       }
+       l
+    p .active {
+          animation: slidein  5s  forwards;
+      }
      
       @keyframes navDrop {
         0% {
@@ -262,14 +269,21 @@ p a{
             height:100vh;
         }
     }
-    @keyfrmaes navPull {
-        0%{
-            height:100%;
+    @keyframes slidein {
+        from {
+          opacity:.2;
         }
-        100% {
-            height:0%;
+      
+        to {
+          transform: translateX(60px);
+          opacity: 1;
+         
         }
-    }
+      }
+      
+
+      
+   
 
 
       
