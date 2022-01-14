@@ -105,8 +105,9 @@ canvas {
 .logo {
    /* margin-top:150px; */
     display:block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: 700px; */
+    margin-left:700px;
+    margin-right:700px;
     width: 400px;
    height: 400px;
    opacity: 1;
@@ -119,8 +120,7 @@ canvas {
 h3 {
     color: white;
     font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     text-align: center;
 }
 .bookText {
