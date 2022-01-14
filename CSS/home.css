@@ -82,12 +82,12 @@ nav li a{
 }
 .content{
     margin-top: 175px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     position:absolute;
     z-index: 0;
     overflow-x: hidden;
+    width: 100%;
    
 }
 canvas {
@@ -100,18 +100,20 @@ canvas {
     -webkit-filter: blur(8px);
   }
 
-
+.logo-container{
+    padding-right: 100px;
+    width: 100%;
+}
 
 .logo {
-   /* margin-top:150px; */
     display:block;
-    /* margin-left: 700px; */
-    margin-left:700px;
-    margin-right:700px;
     width: 400px;
-   height: 400px;
-   opacity: 1;
+    height: 400px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 
 
