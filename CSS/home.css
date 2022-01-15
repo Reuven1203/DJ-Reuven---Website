@@ -1,4 +1,7 @@
-
+:root {
+    --mainColor:#FF00E2;
+    --card-border:30px;
+}
 *{
     margin:0;
     padding:0;
@@ -6,13 +9,15 @@
 }
 html{
     height:100vh;
+   
 }
 body {
-
+ background-color:rgb(255, 255, 255);
     font-family: 'Questrial', sans-serif;
     overflow-x:hidden;
     margin:0;
     height: max-content;
+    
 }
 nav {
     
@@ -21,29 +26,36 @@ nav {
     position: fixed;
     margin-top: 0;
     z-index: 10;
-    background-color: #FF00E2;
+    background-color: var(--mainColor);
     z-index: 1;
 
 }
+.navLinks{
+    height:100%;
+}
 nav ul {
-    display:flex;
+  display:flex;
    list-style-type: none;
+   height: 100%;
 }
 nav li a:hover {
   color: white;
 }
 
 nav li {
-    padding-top:15px;
+   height: 100%;
     text-decoration: none;
     width: 100%;
+    
 } 
 nav li a{
-    color: rgb(148, 148, 148);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
     font-size: 30px;
     width: 100%;
+    height: 100%;
+    padding-top: 15px;
     
 }
 .navLogo {
@@ -80,50 +92,62 @@ nav li a{
     transition:  0.3s ease-in-out;
 }
 .content{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color:black;
+    margin-top: 55px;
     position:absolute;
-    z-index: 0;
     overflow-x: hidden;
     width: 100%;
+    height:200%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:20px;
    
 }
-canvas {
-    position: fixed;
+.card{
+   
+    border-radius:var(--card-border);
+    height: 600px;
+    background-color: #ffffff;
+    overflow-y: hidden;
   
-    width: 100%;
+}
+video{
+    border-radius: var(--card-border);
+    position: absolute;
+    width:100%;
     height: 100%;
-    z-index: -1;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
+    object-fit: fill;
+}
 
 .logo-container{
-    padding-left: 25px;
+    position: absolute;
     width: 100%;
+   height: 600px;
 }
 
 .logo {
+    position: relative;
     display:block;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     opacity: 1;
     margin-left: auto;
     margin-right: auto;
+   
+  
+   
 }
-
 
 
 
 
 
 h3 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
-    margin:auto;
     text-align: center;
     animation: slidein .9s normal forwards;
+    margin-top: -75px;
 }
 .bookText {
     padding-left: 20px;
@@ -131,7 +155,7 @@ h3 {
     width: 100;
 }
 p{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 30px;
 
