@@ -146,26 +146,21 @@ nav li a{
 
 h3 {
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 75px;
     text-align: center;
     animation: slidein .9s normal forwards;
     margin-top: -75px;
 }
-.bookText {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100;
-}
-p{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 30px;
-
-}
-
-p a{
-    color: white;
-    
+button {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    background-color:var(--mainColor);
+   padding: 5px;
+   margin-top: 10px;
+   border: 1px solid;
+   border-radius:50px;
 }
 .toggle-button:hover {
     cursor: pointer;
@@ -291,12 +286,16 @@ p a{
          margin-left: auto;
          margin-right: auto;
          width: 100%;
-         height:300px;
+         height:400px;
      }
 
     .card {
      height: 80vh;
      
+    }
+    .booktext {
+        margin-top:800px;
+        font-size:smaller;
     }
      
       
@@ -324,8 +323,10 @@ p a{
         }
       }
 
+@media  (max-width: 400px) {
+    .book-btn {
+        margin-bottom:50px;
+    }
+}
 
-
-      .scrollable-element {
-        scrollbar-color: red yellow;
-      }
+      
