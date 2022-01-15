@@ -208,7 +208,7 @@ p a{
    
     .navLinks ul li {
        text-align: center;
-       background-color:#232323;
+       background-color:var(--mainColor);
        height: 100%;
      
        
