@@ -92,6 +92,7 @@ nav li a{
     transition:  0.3s ease-in-out;
 }
 .content{
+    /* display: flexbox; */
     background-color:black;
     margin-top: 55px;
     position:absolute;
@@ -162,6 +163,22 @@ button {
    border: 1px solid;
    border-radius:50px;
 }
+.sub-container{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.subcard {
+    position:static;
+    width:50%;
+    border-radius:var(--card-border);
+    border: 1px solid white;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+
+
 .toggle-button:hover {
     cursor: pointer;
 }
