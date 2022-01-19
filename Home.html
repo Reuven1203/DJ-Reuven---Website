@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-   
+    <script src="https://kit.fontawesome.com/0a44600ea7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="CSS/home.css">
    <link rel="stylesheet" href="../CSS/canvas.css">
    <link rel="stylesheet" href="CSS/hover.css">
-
+ <link rel="stylesheet" href="CSS/audioplayer.css">
+ <link rel="preload" href="Stock Gifs/ezgif.com-gif-maker.gif">
     <title>DJ REUVEN - HOME</title>
 </head>
 <body>
@@ -45,19 +46,75 @@
   
 <div class = content>
     <div class="card">
-        <img class = "bg-gif" src="ezgif.com-gif-maker.gif" autoplay="true"  loop> </img>
+        <img class = "bg-gif" src="Stock Gifs/lights.gif" autoplay="true"  loop> </img>
             <div class="logo-container">
          <img class = "logo" loading="lazy" src="DJ artwork/Logo 2.0.png" alt="DJ logo">
          <div class="text">
-              <h3> <span id = "h3">DJ</span> <span class = "h3-2">Reuven</span></h3>
+              <h3> <span id = "h3">DJ</span> <span class = "h3-2">REUVEN</span></h3>
          </div>
           <button class="book-btn">Book Now</button>
     </div>
 </div>
 <div class="sub-container">
     <div class="subcard">
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus illum enim, dolorem modi ducimus ullam minima molestiae assumenda id quod provident commodi earum. Hic inventore sapiente quam omnis labore impedit.</p>
-</div>
+       <img class = "bg-gif" autoplay="true"  src="Stock Gifs/ezgif.com-gif-maker.gif">
+       <div class="logo-container">
+            
+             <h4 class="sub-heading">MIX PREVIEWS</h4>
+       
+     <div class = "mixes">
+        <div class="holder">
+             <h5>Rhytmix</h5>
+            <div class="audio green-audio-player">
+              <div class="loading">
+                <div class="spinner"></div>
+              </div>
+              <div class="play-pause-btn">  
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24" fill="black">
+                  <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+                </svg>
+              </div>
+          
+              <div class="controls">
+                <span class="current-time">0:00</span>
+                <div class="slider" data-direction="horizontal">
+                  <div class="progress">
+                    <div class="pin" id="progress-pin" data-method="rewind"></div>
+                  </div>
+                </div>
+                <span class="total-time">0:00</span>
+              </div>
+          
+              <div class="volume">
+                <div class="volume-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+                  </svg>
+                </div>
+                <div class="volume-controls hidden">
+                  <div class="slider" data-direction="vertical">
+                    <div class="progress">
+                      <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <audio crossorigin>
+                <source src="Mixes/Rhythmix 1.m4a">
+              </audio>
+            </div>
+          </div>  
+            </div>
+            
+       
+     </div>
+ 
+ 
+       </div>
+       
+  
+
 <div class="subcard">
  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse tempora laborum provident deleniti nemo ipsum eos iusto eaque repudiandae aliquid, aspernatur enim? Cupiditate ab labore sint inventore mollitia officiis beatae!</p>
 </div>
@@ -66,13 +123,14 @@
       
         
     </div>
-    
+    </div>
     
      
     <script src="js/scrollani.js"></script>
     <script src = "js/dropdown.js"></script>
+     <script src = "js/audio.js"></script>
    
-   
+   <!-- <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui a blanditiis error corporis eum facilis rerum, laborum ex, earum repellat provident dicta fugit nihil magni vel distinctio praesentium aut amet.</footer> -->
 
 
     
