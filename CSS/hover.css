@@ -94,13 +94,14 @@
     transform: scale(1.1);
   }
 }
-.book-btn {
+/* .book-btn {
   
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .book-btn:hover, .book-btn:focus, .book-btn:active {
   -webkit-animation-name: hvr-pulse-grow;
   animation-name: hvr-pulse-grow;
@@ -112,7 +113,7 @@
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
-}
+} */
 
 /* Pulse Shrink */
 @-webkit-keyframes hvr-pulse-shrink {
