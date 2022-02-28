@@ -106,10 +106,10 @@ nav li a {
   /* padding-top:20px; */
 }
 .card.title {
-  position: fixed;
+  /* position: fixed; */
 }
 .card.s {
-  margin-top: 600px;
+  /* margin-top: 600px; */
 }
 .card {
   border: 3px white;
