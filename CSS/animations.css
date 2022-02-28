@@ -1,0 +1,28 @@
+@keyframes slidein {
+  from {
+    opacity: 0.9;
+    transform: translateX(-60px);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideUpAndMin {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-400px);
+    font-size: 50px;
+  }
+}
+
+.a-animation {
+  animation: slideUpAndMin 0.5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}

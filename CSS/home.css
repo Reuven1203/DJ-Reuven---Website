@@ -15,7 +15,6 @@ body {
   font-family: "Questrial", sans-serif;
   overflow-x: hidden;
   margin: 0;
-  height: max-content;
 }
 header {
   background-color: rgb(255, 255, 255);
@@ -100,7 +99,7 @@ nav li a {
   position: relative;
   overflow-x: hidden;
   width: 100%;
-  height: inherit;
+  height: 100%;
   margin: 0;
   padding: 0;
   /* padding-top:20px; */
@@ -108,19 +107,18 @@ nav li a {
 .card.title {
   /* position: fixed; */
 }
-.card.s {
-  /* margin-top: 600px; */
-}
+
 .card {
   border: 3px white;
   /* border-radius:var(--card-border); */
-  height: 600px;
+  height: 100vh;
   width: 100%;
   /* background-color: #ffffff; */
   overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .bg-gif {
   border: solid 1px black;
@@ -328,7 +326,7 @@ footer {
   }
 
   .card {
-    height: 80vh;
+    height: 100vh;
   }
   h3 {
     font-size: 40px;
