@@ -7,14 +7,15 @@
   padding: 0;
 }
 html {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: rgb(255, 255, 255);
 }
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Questrial", sans-serif;
   overflow-x: hidden;
-  margin: 0;
+  position: relative;
+  height: auto;
 }
 header {
   background-color: rgb(255, 255, 255);
@@ -78,11 +79,12 @@ nav li a {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  z-index: 1000;
 }
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 10px;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -98,14 +100,12 @@ nav li a {
   margin-top: 200px;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
-  height: 100%;
+  height: 2000px;
   margin: 0;
   padding: 0;
   /* padding-top:20px; */
-}
-.card.title {
-  /* position: fixed; */
 }
 
 .card {
@@ -128,16 +128,6 @@ nav li a {
   position: relative;
 }
 
-.logo {
-  position: relative;
-  display: block;
-  width: 500px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -50px;
-}
-
 .context {
   width: 100%;
 
@@ -152,9 +142,10 @@ h1 {
 
   /* animation: slidein .9s normal forwards; */
 }
-button {
-  /* background-color:var(--mainColor); */
+h2 {
+  color: white;
 }
+
 .book-btn {
   display: block;
   margin-left: auto;
@@ -172,6 +163,21 @@ button {
 .sub-container {
   display: flex;
   flex-direction: row;
+}
+.card.gal {
+  justify-content: baseline;
+  align-items: flex-start;
+}
+.flow-in {
+  width: 50%;
+  margin-left: 50px;
+}
+.images {
+  width: 40%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  right: 20px;
 }
 h4 {
   color: white;
@@ -212,9 +218,7 @@ h5 {
 
 footer {
   bottom: 0;
-  margin-bottom: -300px;
-  border-top: 2px solid var(--mainColor);
-  position: absolute;
+
   width: 100%;
   height: 10px;
 }

@@ -14,15 +14,23 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-400px);
+    transform: translateY(-360px);
     font-size: 50px;
   }
 }
 
-.a-animation {
+.sub-heading.a-animation {
   animation: slideUpAndMin 0.5s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+}
+
+.gal.a-animation {
+  animation: changeBG 1s;
+
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out-in;
 }

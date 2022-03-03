@@ -7,8 +7,9 @@ function parallax(id,speed) {
 
 window.addEventListener("scroll", function(){
     parallax("mp",30);
-    if(window.pageYOffset-document.body.scrollTop < 350){
+    if(window.pageYOffset-document.body.scrollTop < 600){
          parallax("gal",30); 
     }
    
 });
+

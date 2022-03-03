@@ -1,11 +1,12 @@
 function startAnimation(id) {
     var elmnt = document.getElementById(id);
-    elmnt.classList.toggle("a-animation");
+    elmnt.classList.add("a-animation");
 
 }
 
 window.addEventListener("scroll", function(){
-    if (window.pageYOffset-document.body.scrollTop == 350){
+    if (window.pageYOffset-document.body.scrollTop >= 553){
         startAnimation("gal-heading")
+        startAnimation("gal")
     }
 })
