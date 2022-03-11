@@ -15,7 +15,6 @@ body {
   font-family: "Questrial", sans-serif;
   overflow-x: hidden;
   position: relative;
-  height: auto;
 }
 header {
   background-color: rgb(255, 255, 255);
@@ -171,6 +170,7 @@ h2 {
 .flow-in {
   width: 50%;
   margin-left: 50px;
+  opacity: 0;
 }
 .images {
   width: 40%;
@@ -178,6 +178,7 @@ h2 {
   background-color: white;
   position: absolute;
   right: 20px;
+  opacity: 0;
 }
 h4 {
   color: white;

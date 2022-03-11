@@ -1,7 +1,19 @@
 @keyframes slidein {
   from {
-    opacity: 0.9;
+    opacity: 0;
     transform: translateX(-60px);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slidein-reverse {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
   }
 
   to {
@@ -14,7 +26,8 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-360px);
+    margin-top: 70px;
+    transform: translateY(-325px);
     font-size: 50px;
   }
 }
@@ -29,8 +42,22 @@
 
 .gal.a-animation {
   animation: changeBG 1s;
-
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out-in;
+}
+
+.flow-in.a-animation {
+  animation: slidein 0.5s;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out-in;
+}
+
+.images.a-animation {
+  animation: slidein-reverse 0.7s;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
